@@ -1,0 +1,411 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #ECE5D8;
+}
+
+
+/* Header */
+header {
+    background: url('https://img.freepik.com/free-vector/realistic-luxury-background_23-2149337098.jpg?t=st=1743494017~exp=1743497617~hmac=99ed8d9743780458a8e117150fd7ace6f680c4bb1a68ceb2897ad23db68b2af8&w=996') no-repeat center center;
+    background-size: cover;
+    color: gold;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid gold;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header p, header a {
+    font-size: 14px;
+    color: gold;
+    text-decoration: none;
+}
+
+header img {
+    border: 3px solid gold;
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+    background-color: #B22222; /* Red */
+    border: 3px solid gold;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover {
+    transform: scale(1.2); /* This makes the link grow */
+}
+
+
+/* Sections */
+h2 {
+    color: #B22222; /* Matching color */
+    border-bottom: 2px solid #B22222;
+}
+
+h3 {
+    color: #B22222;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    background-color: #FAEBD7; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: "Georgia", serif; 
+}
+
+.contact-section h2 {
+    color: #B22222;
+    border-bottom: none;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    text-align: center;
+    font-family: "Georgia", serif; /* Ensure all text in contact section follows this */
+}
+
+.contact-section select {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #B22222;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #B22222;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-section textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-section button {
+    background-color: #B22222;
+    color: gold;
+    border: 2px solid gold;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+.contact-section button:hover {
+    background-color: gold;
+    color: #B22222;
+}
+
+/* Links */
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.contact-links a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.contact-links a img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #B22222; /* Red */
+    color: gold;
+    padding: 10px;
+    border: 3px solid gold;
+}
+
+/* Media */
+
+.media-img {
+    border: 3px solid gold;
+    padding: 5px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+#media h3 {
+    color: #B22222;
+    text-align: center;  /* Center the text */
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+details {
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #B22222;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #fff8f0;
+}
+
+/* Animation stuff */
+
+details {
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  border: 2px solid #B22222;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background-color: #fff8f0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+details {
+  transition: transform 0.3s ease;
+}
+
+details:hover {
+  transform: scale(1.01);
+}
+
+
+summary {
+  padding: 14px 16px;
+  background-color: #B22222;
+  color: gold;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+summary:hover {
+  background-color: #8b1a1a;
+  transform: scale(1.02);
+}
+
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px) scale(0.98);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(5px) scale(1.01);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.intro-header {
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.intro-img {
+  width: 280px;
+  border: 5px solid gold;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.intro-text-container {
+  flex: 1;
+  max-width: 650px;
+  text-align: left;
+}
+
+.intro-text {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.hireme-btn {
+  background-color: #cc0000;
+  color: gold;
+  border: 2px solid gold;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hireme-btn:hover {
+  background-color: gold;
+  color: #cc0000;
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #a00;
+  color: white;
+  padding: 1rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.media-embed {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.media-embed video,
+.media-embed audio {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-media-title {
+  font-size: 23px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: #B22222;
+  border: 3px solid gold;
+  padding: 10px 20px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  margin-right: auto; 
+}
+
+.nav-logo img {
+  height: 40px;
+  width: auto;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: gold;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffd700;
+}
+
+.media-box {
+  border: 3px solid gold;
+  background-color: #fff8f0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.media-box video,
+.media-box audio {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
