@@ -347,7 +347,9 @@ nav {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px; 
 }
+
 
 nav {
   background-color: #B22222;
@@ -358,15 +360,16 @@ nav {
 .nav-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
+  justify-content: flex-start; 
+  gap: 30px;
+
 
 .nav-logo {
-  margin-right: auto; 
+  margin-right: 10px;
 }
 
 .nav-logo img {
-  height: 40px;
+  height: 30px;
   width: auto;
 }
 
@@ -377,7 +380,7 @@ nav {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  gap: 25px;
+  gap: 15px;
 }
 
 .nav-links li a {
